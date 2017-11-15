@@ -1,0 +1,17 @@
+# 1 --- Establish a custom 404 file not found page ---
+
+ErrorDocument 403 /error/<error_handing_htmlpage>
+ErrorDocument 404 /error/<error_handing_htmlpage>
+ErrorDocument 405 /error/<error_handing_htmlpage>
+ErrorDocument 408 /error/<error_handing_htmlpage>
+ErrorDocument 500 /error/<error_handing_htmlpage>
+ErrorDocument 502 /error/<error_handing_htmlpage>
+ErrorDocument 504 /error/<error_handing_htmlpage>
+
+# 2 --- Make pages render without their extension ---
+
+Options +MultiViews
+
+# 3 --- Avoid Directory Browsing ---
+
+Options -indexes

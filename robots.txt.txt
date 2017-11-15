@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /bootstrap/
+Disallow: /includes/
+
+sitemap: http://saltglobal.org/sitemap.xml
