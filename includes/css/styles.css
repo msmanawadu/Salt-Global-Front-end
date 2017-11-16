@@ -33,13 +33,28 @@ body {
    Navbar
    -------------------------------------- */
 
+	 .navbar.navbar-custom .navbar-nav>li>a {
+	   color: #004d40;
+	   text-transform: uppercase;
+	   font-weight: 700;
+		 font-size:15px;
+	   letter-spacing: 1px;
+		 text-align: center;
+	 }
+
+
+	 .navbar-nav > li > a:hover{
+	   background-color:#ff9900;
+	 }
+
 	 .navbar-custom {
      background-color: #00c853;
+
  }
 
 .navbar-brand {
 	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 	padding-left: 16px;
 	padding-right: 16px;
 }
@@ -50,6 +65,29 @@ a.nav-li span.glyphicon {
 
 }
 
+/* --------------------------------------
+   Navbar - 'LEARN' Dropdown list
+   -------------------------------------- */
+ul.dropdown-menu li a {
+	color: #004d40;
+	font-weight: 500;
+	font-size:16px;
+	letter-spacing: 0px;
+	text-align: center;
+	background-color: #00c853;
+}
+
+ul.dropdown-menu>li>a:hover {
+	background-color: #ff9900;
+	 background-image: none;
+}
+
+/* 'LEARN' Dropdown list "Selected/Clicked" state */
+.navbar .navbar-nav > li.open > a:hover,
+.navbar .navbar-nav > li.open > a:focus {
+  background-color: #00c853;
+  color: #004d40;
+}
 
 
 
