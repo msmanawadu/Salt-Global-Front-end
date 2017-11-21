@@ -138,11 +138,70 @@ button.navbar-toggle{
 	min-width: 100%;
 }
 
-
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
 
+
+
+/* --------------------------------------
+   main-content menu list styling
+   -------------------------------------- */
+
+.main-content{
+	margin-top: 8px;
+}
+
+.col-sm-4 form {
+	margin:auto;
+}
+
+
+/* search button - magnifying glass*/
+.btn-default {
+	background:#00c853;
+	color:#004d40;
+	font-weight: 300;
+	font-size:18px;
+	letter-spacing: 0;
+	text-align: center;
+	border-color: #00c853;
+	margin-bottom: 4px;
+
+}
+
+button.btn-default:focus{
+    background: #ff9900;
+		border-color: #ff9900;
+}
+button.btn-default:hover{
+    background: #ff9900;
+		border-color: #ff9900;
+}
+
+
+/* search box with placeholder text */
+
+input#search-term{
+padding:21px 10px;
+	}
+
+.add-on .input-group-btn > .btn {
+padding: 9.5px 10px;
+border: 0px;
+
+}
+
+/* glowing orange shadow of search box */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none;
+ border-color:#ff9900;
+}
+
+
+/* dropdown list caret symbol styling */
+span.caret{border-top:5px solid #ffd600;}
 
 
 /* --------------------------------------
