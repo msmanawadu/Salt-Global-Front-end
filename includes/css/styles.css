@@ -30,7 +30,7 @@ body {
 
 
 	 .navbar-nav > li > a:hover{
-	   background-color:#ff9900;
+	   background-color:#00c853;
 	 }
 
 
@@ -38,7 +38,7 @@ body {
 	     margin-bottom: 0px;
 			 padding-right: 20px;
        padding-left: 20px;
-			 background-color: #00c853;
+			 background-color: #ffffff;
 			 -webkit-border-radius: 5px;
  }
 
@@ -197,6 +197,81 @@ border: 0px;
   border-top-color: #1c2331;
 }
 
+
+/* thumbnail overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #007E33;
+	border-radius: 5px;
+	margin: auto;
+}
+
+div.thumbnail.text-center:hover .overlay {
+  opacity: 0.82;
+}
+
+/* thumbnail overlay text styling */
+.text a{
+  color:#ff9900;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	font-weight: 600;
+	text-decoration:none;
+
+
+}
+
+
+/* --------------------------------------
+   text-content
+   -------------------------------------- */
+
+
+/* pagination bar */
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: #004d40;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+		font-size: 20px;
+		font-weight: 600;
+		margin: 0 2px;
+}
+
+.pagination a.active {
+    background-color: #00c853;
+    color: #ff9900;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+div.page-bar {
+    text-align: center;
+}
+
+
+
 /* --------------------------------------
    Footer
    -------------------------------------- */
@@ -206,16 +281,33 @@ footer{
 	padding: 25px;
 }
 
+/* footer text styling */
 footer .col-sm-4 p{
 	color: #ff9900;
 	text-transform: lowercase;
 	font-weight: 600;
 	font-size:14px;
-	letter-spacing: 0px;
 }
 
 
+/* social media icons color */
+.col-xs-12 a i.fa {
+	color: #ff9900;
+	padding: 0px 12px;
+}
 
+/* social media icons hover with official hex color code */
+.social-media .fa-facebook-square:hover {
+	color:#3b5998;
+}
+
+.social-media .fa-youtube:hover {
+	color:#bb0000;
+}
+
+.social-media .fa-linkedin:hover {
+	color:#007bb6;
+}
 
 /* --------------------------------------
    Media Queries
@@ -227,7 +319,7 @@ footer .col-sm-4 p{
 
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 750px) {
+@media (max-width: 720px) {
 
 	#myCarousel .item { height: 310px; }
 
