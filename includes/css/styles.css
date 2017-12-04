@@ -39,7 +39,7 @@ body {
 			 padding-right: 20px;
        padding-left: 20px;
 			 background-color: #ffffff;
-			 -webkit-border-radius: 5px;
+			 -webkit-border-radius: 2px;
  }
 
 .navbar-brand {
@@ -51,7 +51,7 @@ body {
 
 
 a.nav-li span.glyphicon {
-	padding-left : 15px;
+	padding : auto;
 
 }
 
@@ -97,7 +97,7 @@ button.navbar-toggle{
    -------------------------------------- */
 
 #myCarousel {
-	margin-top: 55px;
+	margin-top: 50px;
 }
 
 .carousel-caption {
@@ -197,6 +197,12 @@ border: 0px;
   border-top-color: #1c2331;
 }
 
+/* sme profile thumbnail */
+
+div.thumbnail.text-center{
+	    margin-bottom: 4px;
+}
+
 
 /* thumbnail overlay styling */
 .overlay {
@@ -229,9 +235,21 @@ div.thumbnail.text-center:hover .overlay {
   -ms-transform: translate(-50%, -50%);
 	font-weight: 600;
 	text-decoration:none;
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* --------------------------------------
@@ -269,6 +287,45 @@ div.thumbnail.text-center:hover .overlay {
 div.page-bar {
     text-align: center;
 }
+
+
+
+
+/* sme column equal height - Flexbox */
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+
+
 
 
 
@@ -313,13 +370,14 @@ footer .col-sm-4 p{
    Media Queries
    -------------------------------------- */
 
+
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-}
-
+	}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 720px) {
+
 
 	#myCarousel .item { height: 310px; }
 
@@ -345,8 +403,14 @@ footer .col-sm-4 p{
 
 }
 
+
 /* Large desktop */
-@media (min-width: 990px) {
+@media (min-width: 992px) {
+
+	/* Column clear fix */
+  .col-md-4:nth-child(3n+1){
+    clear: left;
+  }
 
 	#myCarousel .item { height: 500px; }
 
